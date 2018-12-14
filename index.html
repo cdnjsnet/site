@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="前端公共库CDN，开源项目CDN公共库，静态资源库。全面支持https，节点覆盖全国30多个省市，让您的网站像百度搜索一样快！实时同步cdnjs.com！">
+    <meta name="author" content="cdnjs.net">
+    <title>前端公共库CDN加速-静态资源公共库,百度云CDN公共库</title>
+    <link rel="canonical" href="https://cdnjs.net/" />
+    <link rel="dns-prefetch" href="https://libs.cdnjs.net">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet"> 
+    <link href="https://libs.cdnjs.net/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://libs.cdnjs.net/prettify/r298/prettify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="container" id="home">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+        </ul>
+        <h3 class="text-muted"><a href="https://cdnjs.net/" title="CDN加速网">CDNJS.NET</a></h3>
+      </div>
+      <div class="jumbotron">
+        <h1>前端公共库CDN加速</h1>
+        <p class="lead">百度云CDN加速，不是免费CDN，不是海外CDN，让您的网站像百度搜索一样快！<br>引用域名白名单机制，无限流量、无限请求、支持https，99/年。<a href=images/wechat.jpeg>微信支付</a>、<a href=images/alipay.jpeg>支付宝支付</a></p>
+        </div>
+        <div class="search-container">
+            <div class="search-body">
+                <div class="search-main">
+                    <div class="search-wraper" role="search">
+                        <div class="form-group" id="search0">
+                            <input class="form-control search clearable"
+                                   placeholder="搜索开源库，例如：jquery"
+                                   autocomplete="off"
+                                   autofocus
+                                   tabindex="0"
+                                   autocorrect="off"
+                                   autocapitalize="off"
+                                   spellcheck="false"
+                                   onkeyup="searchPackages(this.value)">
+                                   <!--v-model.trim="packageList">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <main class="main-body">
+        <div class="container">
+            <div class="list-group packages" id="common-packages" style="display: block;">
+                <div>
+                    <!--v-else-->
+                    <todo-item
+                            v-for="item1 in showList"
+                            :key="item1.id"
+                            :todo1="item1">
+                    </todo-item>
+
+                    <a href="#all" class="package list-group-item all-packages"
+                       onclick="appPackage1.more" v-show="noMore">所有开源项目列表</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h4 align="center" class="page-header"><strong><font color="red">好用不贵的</font>静态资源公共库</strong>  【云主机推荐：<a href="https://s.click.taobao.com/t?e=m%3D2%26s%3DYR5OPhjn160cQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAuqe8y0eIFBnMZCN4fb8romTR3T7sbxEgLqDY1FYhPavrFr97nHOnHTjs7xiUjO%2B0edn1BbglxZYxUhy8exlzcpAFEHVckI7b93srg%2FL%2FeD3keUEnoKELDlWYetMiZZgV%2BSx6OrKqagyklzFeKMz7Cc%2FGaP4xw11%2FizZhcM3IxQF" target=_blank">阿里云</a>、<a href="https://www.vultr.com/?ref=6809598" target="_blank"><strong>Vultr</strong></a>、<a href="https://www.linode.com/?r=6226223ca39970b7ee1b06b3c79015a9b80aef88
+" target="_blank">Linode</a>、<a href="https://m.do.co/c/6b173b2d7e5e" target="_blank">DigitalOcean</a>】</h4>
+<div class="col-lg-6">
+<h4>安全第一</h4>
+<p>百度云CDN强力驱动，HTTPS加密，安全可靠</p>
+<h4>稳定为王</h4>
+<p>跨运营商、跨地域、全网覆盖，100%可用率保证</p>
+<h4>快如闪电</h4>
+<p>SSD存储，500+节点，99.99%命中率，毫秒级响应</p>
+</div>
+<div class="col-lg-6">
+<h4>好用不贵</h4>
+<p>用免费/海外的不如不用CDN，规模化采购，价更低</p>
+<h4>可靠靠谱</h4>
+<p>始于2014年，持续优化，持续运营，服务可靠</p>
+<h4>技术领先</h4>
+<p>智能压缩，弹性升级，自动切换，高性能缓存</p>
+</div>
+      </div>
+      <div class="footer">
+<p align="center"><a href="https://www.adorewe.com/">AdoreWe</a> &copy; <a href="https://cdnjs.net/" target="_blank">CDNJS.NET</a> 公共库CDN加速服务始于2014年 <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14057981号-1</a> <a href="mailto:admin@cdnjs.net">admin@cdnjs.net</a><br>免责声明：本站为个人网站，无法保障非白名单域名引用的可靠及稳定性，建议自行购买CDN服务或付费升级。</p>
+      </div>
+    </div>
+<script src="https://libs.cdnjs.net/vue/2.5.16/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
