@@ -16,7 +16,7 @@ var appInfo = new Vue({
     created: function () {
         var name = getQueryString("name");
         var request = new XMLHttpRequest();
-        request.open("GET", "https://api.cdnjs.net/libraries/" + name + "");
+        request.open("GET", "https://api.cdnjs.net/libraries/" + name + ".min.json" + "");
         request.send();
         request.onreadystatechange = function () {
             if (request.readyState === 4 && request.status === 200) {
