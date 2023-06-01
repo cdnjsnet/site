@@ -94,7 +94,7 @@ var appPackage1 = new Vue({
 (function () {
     //Ajax请求所有列表数据，并存于root.data下
     var request = new XMLHttpRequest();
-    request.open("GET", "https://api.cdnjs.net/libraries.min.json");
+    request.open("GET", "https://api.cdnjs.net/libs.min.json");
     request.send();
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
