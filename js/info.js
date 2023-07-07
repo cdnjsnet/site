@@ -10,8 +10,7 @@ var appInfo = new Vue({
     el: '#cdn',
     data: {
         allInfo: '',
-        pkgVersion: '',
-        url: ''
+        pkgVersion: ''
     },
     created: function () {
         var name = getQueryString("name");
