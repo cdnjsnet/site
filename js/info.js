@@ -22,7 +22,7 @@ var appInfo = new Vue({
             if (request.readyState === 4 && request.status === 200) {
                 appInfo.allInfo = JSON.parse(request.responseText);
                 appInfo.pkgVersion = JSON.parse(request.responseText).assets;
-                appInfo.url = JSON.parse(request.responseText).assets.repository.url;
+                //appInfo.url = JSON.parse(request.responseText).url;
             }
             else {
                 console.log('statusText:' + request.statusText);
