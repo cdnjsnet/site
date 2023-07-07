@@ -20,9 +20,10 @@ var appInfo = new Vue({
         request.send();
         request.onreadystatechange = function () {
             if (request.readyState === 4 && request.status === 200) {
-                appInfo.allInfo = JSON.parse(request.responseText);
-                appInfo.pkgVersion = JSON.parse(request.responseText).assets;
-                //appInfo.url = JSON.parse(request.responseText).url;
+               var responseData = JSON.parse(request.responseText);
+               appInfo.allInfo = responseData;
+               appInfo.pkgVersion = responseData.assets;
+               appInfo.url = responseData.repository.url;
             }
             else {
                 console.log('statusText:' + request.statusText);
